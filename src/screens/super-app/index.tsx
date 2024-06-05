@@ -7,10 +7,11 @@ import {
   Poppins_500Medium,
   Poppins_600SemiBold,
 } from "@expo-google-fonts/poppins";
-import { styles } from "./styles";
-import { useNavigation } from "@react-navigation/native";
 
-export default function HomeScreen() {
+import { useNavigation } from "@react-navigation/native";
+import { styles } from "./styles";
+
+export default function Homefoda() {
   const { navigate } = useNavigation();
 
   const [fontsLoaded] = useFonts({
@@ -25,16 +26,10 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      <Image
-        source={require("../../../assets/background.png")}
-        style={styles.background}
-      />
+
       <View style={styles.textSection}>
-        <Image
-          source={require("../../../assets/logo.png")}
-          style={styles.logo}
-        />
-        <Text style={styles.textTitle}>Cripto</Text>
+ 
+        <Text style={styles.textTitle}>Tela do sexo rs</Text>
         <Text style={styles.textDescription}>
           Seu parceiro inteligente para gerenciar suas criptomoedas.
         </Text>
@@ -43,7 +38,7 @@ export default function HomeScreen() {
         style={styles.button}
         onPress={() => navigate("Authentication")}
       >
-        <Text style={styles.buttonText}>Continue</Text>
+        <Text style={styles.buttonText}>botaozinho de home</Text>
       </TouchableOpacity>
     </View>
   );

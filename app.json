@@ -3,6 +3,9 @@
     "name": "imhere",
     "slug": "imhere",
     "version": "1.0.0",
+    "scheme": [
+      "using-supabase"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,18 +21,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ryanvs.imhere"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      [
-        "expo-font",
-        {
-          "fonts": ["./assets/fonts/Inter-Black.otf"]
-        }
-      ]
+      "expo-router"
     ]
   }
 }
